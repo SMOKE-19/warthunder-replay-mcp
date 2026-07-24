@@ -1,0 +1,31 @@
+[build-system]
+requires = ["uv_build>=0.11.17,<0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "warthunder-replay-mcp"
+version = "0.1.0"
+description = "Local MCP server for downloading War Thunder server replays."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "browser-cookie3>=0.20,<0.21",
+    "mcp>=1.27,<2",
+    "requests>=2.34,<3",
+]
+
+[project.scripts]
+warthunder-replay-mcp = "warthunder_replay_mcp.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0,<9.0",
+    "ruff>=0.8",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
