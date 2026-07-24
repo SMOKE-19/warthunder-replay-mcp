@@ -13,6 +13,7 @@ htmlcov/
 build/
 dist/
 wheels/
+tests/
 
 Downloads/
 downloads/
