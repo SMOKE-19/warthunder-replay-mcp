@@ -2,6 +2,9 @@
 .venv/
 .venv*/
 venv/
+.env
+.env.*
+!.env.example
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -17,6 +20,11 @@ tests/
 
 Downloads/
 downloads/
+user_id.txt
+Cookies
+Cookies-journal
+*.cookie
+*.cookies
 .tmp/
 .TEMP/
 data/
